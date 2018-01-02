@@ -1,13 +1,8 @@
 /************************************************************************************************************************************/
 /** @file		DataBackup.swift
- *	@project    0_0 - Empty Template (Swift)
+ *	@project    0_0 - 0_0 - Settings
  * 	@brief		x
  * 	@details	x
- *
- * 	@author		Justin Reina, Firmware Engineer, Jaostech
- * 	@created	4/3/16
- * 	@last rev	x
- *
  *
  * 	@notes		x
  *
@@ -38,6 +33,12 @@ class DataBackup : NSObject, NSCoding {
 
 
 //MARK: Initialization
+    /********************************************************************************************************************************/
+    /** @fcn        init?(someVal_0 : Int?)
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
     init?(someVal_0 : Int?) {                                               /* Initialization from backup                           */
         
         self.someVal_0 = someVal_0;
@@ -53,7 +54,13 @@ class DataBackup : NSObject, NSCoding {
 
 
 // MARK: NSCoding
-    //store
+    //Store
+    /********************************************************************************************************************************/
+    /** @fcn        encode()
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
     func encode(with aCoder: NSCoder) {
 
         aCoder.encode(self.someVal_0, forKey:DataBackupKeys.someVal_0);
@@ -64,7 +71,13 @@ class DataBackup : NSObject, NSCoding {
     }
     
     
-    //retrieve
+    //Retrieve
+    /********************************************************************************************************************************/
+    /** @fcn        required convenience init?(coder aDecoder: NSCoder)
+     *  @brief      x
+     *  @details    x
+     */
+    /********************************************************************************************************************************/
     required convenience init?(coder aDecoder: NSCoder) {
 
         let someVal_0Backup : Int? = aDecoder.decodeObject(forKey: DataBackupKeys.someVal_0) as? Int;

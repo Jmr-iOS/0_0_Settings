@@ -1,13 +1,8 @@
 /************************************************************************************************************************************/
 /** @file		AppDelegate.swift
- *  @project    0_0 - Empty Template (Swift)
+ *  @project    0_0 - Settings
  * 	@brief		x
  * 	@details	x
- *
- * 	@author		Justin Reina, Firmware Engineer, Jaostech
- * 	@created	11/12/15
- * 	@last rev	x
- *
  *
  * 	@notes		x
  *
@@ -27,7 +22,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?;
 
-
+    /********************************************************************************************************************************/
+    /**    @fcn        int main(void)
+     *  @brief        x
+     *  @details    x
+     *
+     *  @section    Purpose
+     *      x
+     *
+     *  @param        [in]    name    descrip
+     *
+     *  @param        [out]    name    descrip
+     *
+     *  @return        (type) descrip
+     *
+     *  @pre        x
+     *
+     *  @post        x
+     *
+     *  @section    Operation
+     *        x
+     *
+     *  @section    Opens
+     *      x
+     *
+     *  @section    Hazards & Risks
+     *      x
+     *
+     *    @section    Todo
+     *        x
+     *
+     *  @section    Timing
+     *      x
+     *
+     *  @note        x
+     */
+    /********************************************************************************************************************************/
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         self.window = UIWindow.init(frame: UIScreen.main.bounds);
